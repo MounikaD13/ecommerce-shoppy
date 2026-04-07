@@ -219,23 +219,51 @@ const LoginSelection = () => {
                     .ls-card { padding: 2rem 1.5rem; border-radius: 16px; }
                     .ls-heading { font-size: 1.4rem; }
                 }
+                    .rs-brand {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    justify-content: center;
+                    margin-bottom: 2rem;
+                }
+
+                .rs-brand-icon {
+                    width: 32px;
+                    height: 32px;
+                    background: #1a1a1a;
+                    border-radius: 8px;
+                    display: grid;
+                    place-items: center;
+                }
+
+                .rs-brand-icon svg {
+                    width: 18px;
+                    height: 18px;
+                    fill: #f7f5f2;
+                }
+
+                .rs-brand-name {
+                    font-family: 'Playfair Display', serif;
+                    font-size: 1.25rem;
+                    color: #1a1a1a;
+                    letter-spacing: -0.01em;
+                }
             `}</style>
 
             <div className="ls-root">
                 <div className="ls-card">
 
                     {/* Brand */}
-                    <div className="ls-brand">
-                        <div className="ls-brand-icon">
+                     <div className="rs-brand">
+                        <div className="rs-brand-icon">
                             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#f7f5f2">
                                 <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
                                 <line x1="3" y1="6" x2="21" y2="6" stroke="#1a1a1a" strokeWidth="1.5" fill="none"/>
                                 <path d="M16 10a4 4 0 0 1-8 0" stroke="#1a1a1a" strokeWidth="1.5" fill="none"/>
                             </svg>
                         </div>
-                        <span className="ls-brand-name">Shopique</span>
+                        <span className="rs-brand-name">Shopique</span>
                     </div>
-
                     <div className="ls-divider" />
 
                     <h2 className="ls-heading">Welcome back</h2>
